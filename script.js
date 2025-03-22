@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 为"前往下一页"的按钮添加事件监听器
     if(goToNextPageButton){ //Ensure the button exists before adding listener
         goToNextPageButton.addEventListener('click', function() {
-            window.location.href = 'next_page.html'; // 跳转到 next_page.html
+            window.location.href = 'index(1).html'; // 跳转到 next_page.html
         });
     }
 
