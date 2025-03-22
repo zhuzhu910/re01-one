@@ -6,7 +6,42 @@
     <title>简易待办事项列表</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>下一页</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+          .back-button {
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <h1>这是下一页</h1>
+            <p>欢迎来到下一页！</p>
+    
+            <button class="back-button" onclick="goBack()">返回上一页</button>
+    
+        </div>
+    
+        <script>
+            function goBack() {
+                window.history.back(); // 使用 history.back() 返回上一页
+            }
+        </script>
+    </body>
+    </html>
 
     <div class="container">
         <div class="header-section" style="  /* 淡蓝色 */
@@ -28,13 +63,9 @@
                 <!-- 待办事项将动态添加到这里 -->
             </ul>
 
-            <button id="go-to-settings">前往设置</button>
+           <button id="go-to-next-page">前往下一页</button>  <!-- 添加id -->
         </div>
 
-        <div class="your-tasks-section"> <!-- 你的待办事项 -->
-            <h2>你的待办事项</h2>
-            <p>这里显示你自己的待办事项。</p>
-        </div>
 
         <div class="footer-section"> <!-- 底部区域 -->
             <p>你是猪猪</p>
